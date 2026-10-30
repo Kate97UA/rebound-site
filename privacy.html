@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebound Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">Rebound</a></p>
+<h1>Privacy policy</h1>
+<p class="meta">Last updated: 30 October 2026</p>
+
+<p class="lead">Rebound is a habit tracker with no account, no ads, no analytics and no tracking.
+Your habits stay on your iPhone and in your own iCloud. The only time anything leaves your devices
+is when you use the optional AI coach, and the app asks you first.</p>
+
+<h2>1. What stays on your device and in your iCloud</h2>
+<p>Your habits, their versions and schedules, the days you log, pauses, check-ins (including any
+words you type) and settings are stored on your iPhone. If you are signed in to iCloud, they are
+also kept in your private iCloud database through Apple’s CloudKit, so they sync between your
+devices. That database belongs to your Apple Account; the developer of Rebound cannot see it.
+Widgets and the Shortcuts action read and write the same data on your device.</p>
+<p>Reminders are local notifications scheduled on your iPhone. Nothing is sent to a server for them.</p>
+
+<h2>2. The AI coach (Rebound Pro, optional)</h2>
+<p>After a missed day, Rebound can ask what got in the way and suggest one small change. With
+Rebound Pro, that suggestion can be written by an AI. Before the first time, the app asks for your
+permission, and you can turn it off at any time in Settings → AI coach.</p>
+<p>When the AI coach is on and you finish a check-in, the app sends:</p>
+<ul>
+<li>the habit’s name, its full and tiny versions, schedule, routine anchor and reminder times;</li>
+<li>a 14-character summary of your last 14 days (for example done, tiny, missed, paused) and the momentum score;</li>
+<li>the reason you chose and any words you typed (up to 300 characters);</li>
+<li>the app language, a proof of your Pro purchase (see section 4) and a random app-generated identifier (see section 3).</li>
+</ul>
+<p>This goes over an encrypted connection to Rebound’s server, a function hosted by
+<a href="https://supabase.com/privacy">Supabase</a>. The server checks that you have Pro, passes the
+habit details, reason and words to <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>’s
+Claude model to write one suggestion, checks the answer and sends it back to your iPhone. The
+server does not store the request or the answer; its logs contain only a status code and how long
+the request took.</p>
+<p>Anthropic processes this data to provide the answer, does not use it to train its models, and
+keeps it only for a limited time under its commercial terms. Nothing sent is linked to your name,
+email or Apple Account.</p>
+<p>If the AI coach is off, or you don’t have Pro, nothing is sent: the check-in shows a short note
+written into the app instead.</p>
+
+<h2>3. Daily limit</h2>
+<p>To keep the AI coach fair, each device can ask for a limited number of suggestions per day. The
+app creates a random identifier when first used; the server stores only a salted hash of it and a
+count for the current day. It cannot be used to identify you or your device.</p>
+
+<h2>4. Purchases</h2>
+<p>Rebound Pro is sold through the App Store. Apple handles payment; the developer never sees your
+payment details or Apple Account. To check Pro for the AI coach, the app sends Apple’s signed proof
+of your purchase (product, dates, transaction number). The server verifies Apple’s signature and
+does not store it.</p>
+
+<h2>5. What Rebound does not do</h2>
+<ul>
+<li>No account, sign-in, name or email.</li>
+<li>No advertising, no analytics or crash-reporting SDKs, no tracking across apps or websites.</li>
+<li>No selling or sharing of data, except the AI coach request described above.</li>
+<li>No access to Apple Health, contacts, photos, location or microphone.</li>
+</ul>
+
+<h2>6. Your choices</h2>
+<ul>
+<li><strong>Export:</strong> Settings → Your data creates a spreadsheet (CSV) or a full JSON file of everything.</li>
+<li><strong>AI coach:</strong> turn it on or off in Settings.</li>
+<li><strong>Delete:</strong> delete habits in the app. Deleting the app removes the data on that device;
+to remove the iCloud copy, open the Settings app → your name → iCloud → Manage Account Storage → Rebound → Delete Data.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>Rebound is not directed at children under 13 and does not knowingly collect their data.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new date. Changes that send
+more data anywhere will be asked for in the app first.</p>
+
+<h2>9. Contact</h2>
+<p>Questions or requests: <a href="mailto:kate.laksha@gmail.com">kate.laksha@gmail.com</a>.</p>
+</main>
+</body>
+</html>
